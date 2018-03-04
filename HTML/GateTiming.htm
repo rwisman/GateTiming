@@ -1,0 +1,608 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Raymond F. Wisman">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link REL="stylesheet" href="basic.css" type="text/css">
+<link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico"/>
+<title>GateTiming</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" 
+alink="#FF0000">
+
+	<table border="0" cellpadding="10" cellspacing="0" width="100%" height="4372">
+		<tr>
+			<td height="4372" width="100%"><font size="5"><b>Mobile Science </b></font>&nbsp;<a href="javascript:(function(){l=location.href;if(l.indexOf('translate')>=0){l=decodeURIComponent(l.replace(/^.*[&?](trurl|url|u)=/,'').replace(/[&?].*$/,''))};s=document.selection?document.selection.createRange().text:window.getSelection?window.getSelection().toString():document.getSelection?document.getSelection():'';lw=(s=='')?'http://translate.google.com/translate?u='+encodeURIComponent(l)+'&sl=auto&tl=es&anno=0':'http://translate.google.com/translate_t?text='+s+'&sl=auto&tl=es';wt=window.open(lw);if(window.focus){wt.focus()};})()" style="text-decoration: none"><font size="2">Espanol</font></a><font size="5"><img border="0" src="icon.png" align="left" hspace="0" style="border: 8px solid #FFFFFF; background-color: #FFFFFF" width="72" height="72"><b><br>
+			GateTiming</b></font>
+	by Ray Wisman and Kyle Forinash<br>Indiana University SE. 
+
+				<blockquote>
+					<blockquote>
+						<h2><font size="4"><br>
+						Google Play</font><span style="font-size: 16pt"> 
+						- </span>
+						<a href="https://play.google.com/store/apps/details?id=edu.ius.rwisman.gatetiming">
+						<font size="4">GateTiming</font></a></h2>
+						<p><b>YouTube</b>&nbsp; -
+						<a href="https://youtu.be/B0zvvjdaO6k">
+						https://youtu.be/B0zvvjdaO6k</a></p>
+					</blockquote>
+					<h2><span style="font-size: 16pt">Description</span></h2>
+					<blockquote>
+						<p><i>GateTiming</i> measures the time an object enters 
+						and exits a series of gates where each gate is constructed of 
+						one switch or one photoresistor.</p>
+						<p>A simple 2 resistor and 1 capacitor circuit 
+						connects the headphone jack to the gates; a circuit 
+						diagram is given below. Circuit calibration and gate 
+						detection tests accommodates 
+						local lighting conditions when photoresistors are used. </p>
+
+					</blockquote>
+					<table border="0" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>
+							<img border="0" src="calibrate.png" width="300" height="480"></td>
+							<td>
+							<img border="0" src="detection.png" width="300" height="480"></td>
+							<td>
+							<img border="0" src="start.png" width="300" height="480"></td>
+							<td>
+							<img border="0" src="list.png" width="300" height="480"></td>
+							<td>
+							<img border="0" src="simplelist2.png" width="300" height="480"></td>
+						</tr>
+						<tr>
+							<td align="center">1) Calibrate volume 
+									setting.</td>
+							<td align="center">2) Detect gates.</td>
+							<td align="center">3) <i>Start</i> timing.</td>
+							<td align="center">
+							<p align="left">4) Detail list: 6 runs of 4 gates.
+							</td>
+							<td align="center">5) Simple list. </td>
+						</tr>
+					</table>
+					<p><b>Quick Start</b></p>
+					<blockquote>
+						<p>When opened, the app automatically attempts to 
+						calibrate for local conditions. All photoresistors 
+						should be maximally illuminated and all switches closed. 
+						If using another type of variable resistor or switch as a gate, 
+						the resistance should be low (in the hundreds of Ohms 
+						range) when the gate is closed and high resistance 
+						(above 10K Ohms) when the gate is open.</p>
+						<ol>
+							<li>Open <i>GateTiming</i>. Close switches and illuminate photoresistors.</li>
+							<li><i>Setup</i> will check: 1) circuit connected to the 
+							headset, 2) airplane mode ON, and permission to 3) record 
+							audio and 4) access files. <i>Close Setup</i> when 
+							finished.</li>
+							<li><i>Calibration</i> will automatically start, wait for 
+							calibration to finish, usually in a few seconds. 
+							Press OK if calibration verifies sufficient circuit 
+							power.</li>
+							<li><i>Gate detection</i> checks each gate operation and 
+							requires passing the object to be timed through each gate. 
+							Define the number of gates 
+							using
+							<img border="0" src="gate.png" width="20" height="17"> 
+							from menu and RETRY. Press OK after gate detection 
+							rates each gate, checking the illumination of any photoresistor with Poor or Fail rating and RETRY.
+							</li>
+							<li>After both calibration and gate detection are 
+							successful, press <i>Start</i> button. Enter and exit each gate, 
+							after times for the defined number of gates has been 
+							measured the <i>Start</i> button reappears.</li>
+							<li>Use menu item
+							<img border="0" src="ic_action_view_list.png" width="19" height="21"> 
+							to list the times at each gate. Tap an entry to 
+							delete an entire run.</li>
+						</ol>
+					</blockquote>
+					<p><b>Results</b></p>
+					<blockquote>
+						<p>Detailed results are presented in list form as in Figure 4 
+						above. </p>
+						<ul>
+							<li>Times are in seconds. </li>
+							<li>Elapsed time 0.000 indicates start of new or non 
+							continuous timings. Line 2, Run:Gate 1:2, indicates 
+							gate 2 was entered .0220s after Run:Gate 1. Run:Gate 
+							3:2 was entered 6.655s after Run:Gate 1. Run:Gate 
+							4:1 enter time 0.000s indicates the <i>start </i>of 
+							additional or non continuous timings.</li>
+							<li>Enter, the time relative to entering the first 
+							gate of the run so is always 0.000 for the first 
+							gate of the run. Run:Gate 1:4 was entered 0.741s 
+							after Run:Gate 1:1.</li>
+							<li>Gap, the time between entering 
+							the current gate and the previous gate. Run:Gate 1:4 
+							was entered 0.174s after Run:Gate 1:3.</li>
+							<li>Exit, the time relative to exiting the first 
+							gate. Run:Gate 1:4 was exited 1.476s after Run:Gate 
+							1:1 was entered.</li>
+							<li>Gap, the time between exiting 
+							the current gate and the previous gate. Run:Gate 1:4 
+							was exited 0.739s after Run:Gate 1:3.</li>
+						</ul>
+						<p>Simple results list UTC date/time recorded on 
+						entering last gate and the time interval between 
+						entering the first and last gate as in Figure 5 above. 
+						Simple listing results can be sorted by run or time.</p>
+					</blockquote>
+					<p><b>Settings</b></p>
+					<blockquote>
+						<ol>
+							<li>
+							<img border="0" src="gate.png" width="36" height="36"> 
+							Number of gates in circuit.</li>
+							<li>
+							<img border="0" src="ic_action_repeat.png"> 
+							Repeats multiple timing runs until
+							<img border="0" src="ic_pause_white_24dp.png" width="36" height="36">.<br>
+							<img border="0" src="ic_action_repeat_one.png" width="36" height="36"> 
+							One full timing run then stops.</li>
+							<li>
+							<img border="0" src="ic_pause_white_24dp.png">  
+							Stops calibration, timing, etc.</li>
+							<li>
+							<img border="0" src="ic_action_view_list.png" width="36" height="36"> 
+							Lists timings.</li>
+							<li>
+							<img border="0" src="ic_settings_white_24dp.png" width="36" height="36"> 
+							Calibration of circuit and gates.</li>
+							<li>
+							<img border="0" src="ic_action_delete.png" width="36" height="36"> 
+							Delete current timings.</li>
+							<li>
+							<img border="0" src="ic_action_folder.png" width="36" height="36"> 
+							Save current timings in CVS file.</li>
+							<li>
+							<img border="0" src="ic_action_volume_mute.png" width="36" height="36"> 
+							Set detection level manually.</li>
+							<li>
+							<img border="0" src="ic_iso_white_24dp.png" width="36" height="36"> 
+							Toggle between simple or detailed timings list.<p>
+							</li>
+						</ol>
+						<p></p>
+					</blockquote>
+					<p><b>Use</b></p>
+					<blockquote>
+						<ol>
+							<li>Gates are normally closed, opened when an object 
+							enters the gate. When illuminated, photoresistors 
+							typically have a lower resistance; when blocked the 
+							resistance gradually increases to some maximum. The gate must be open/closed for a 
+							minimum of about 0.001s to be measured, placing a 
+							constrain on the size and velocity of the object 
+							(i.e. 2 cm object blocks the gate twice the time of a 
+							1 cm object moving at the same velocity). Results 
+							can be improved by using a larger object.<br>
+&nbsp;</li>
+							<li>Automatic calibration adjusts for local lighting 
+							by adjusting the volume up to a maximum until a 
+							sufficiently strong signal indicates all the gates 
+							are closed, that volume level is then used to 
+							determine when gates are open or closed during 
+							timing. A lower volume setting indicates a stronger 
+							signal, a calibrated volume of 50% is very good and 
+							generally produces more accurate time measures than 
+							a higher volume. Calibrating at a lower volume power 
+							level generally implies that the light source is 
+							relatively bright. Recommend shrouding 
+							photoresistors to reduce ambient light.<br>
+&nbsp;</li>
+							<li>Detection of each gate is performed, requiring 
+							that an object enter and exit each gate for 
+							comparison with gate low (enter gate) and high (exit 
+							gate) values during 
+							timing measurements. A Good rating indicates the light reaching the photoresistors is 
+							blocked by the object, receiving low levels of 
+							ambient illumination. A Poor rating with strong 
+							illumination may indicate the object blocked the 
+							photoresistor near the limit of it's operating 
+							response time.<br>
+&nbsp;</li>
+							<li>Timing accuracy when using photoresistors is 
+							limited by two main controllable variables: the 
+							local lighting conditions and the detection level 
+							setting. Generally, the lighting should maximally 
+							illuminate the photoresistors when the gate is 
+							closed (no object blocking gate) and minimally when gate is open 
+							(object blocking gate); automatic 
+							calibration attempts to adjust the volume to 
+							correspond to that maximum. Additionally, the user 
+							can manually adjust the detection level that defines 
+							the level a gate is determined to be open or closed; 
+							for example, shadows can indicate the gate opens, 
+							triggering a spurious timing event - adjusting the 
+							detection level lower would lower the level a gate 
+							was determined to be open. Generally, the problem 
+							can be solved by increasing the illumination and/or 
+							using a larger object to block the photoresistor. <br>
+&nbsp;</li>
+							<li>Photo resistors often have a latency of about 
+							0.01s limiting the accuracy of time measurements.&nbsp; 
+							However, if photoresistors with similar latency are 
+							used as gates, the time between gates should be 
+							relatively accurate.<br>
+&nbsp;</li>
+							<li>Red lasers, such as used in visual pointers, can 
+							serve as a focused light source, generally producing 
+							superior results to flashlights, etc. <br>
+&nbsp;</li>
+							<li>Only complete timing runs are recorded, incomplete 
+							runs are automatically deleted. The app has no way of knowing 
+							which gates have been entered, only that the number 
+							of gates specified for a run have been entered, four 
+							gates entered one time or one gate entered four 
+							times appear the same.<br>
+&nbsp;</li>
+							<li>Complete runs can be deleted from the list by 
+							selecting (touching) the run; the runs following the 
+							deleted run are renumbered.<br>
+&nbsp;</li>
+							<li>Simple listings can be sorted by selecting Time &#8597; 
+							or Run &#8597;, each toggles between ascending and 
+							descending sorts. During timing, new runs are added 
+							to the end of the list; sorting occurs only when 
+							starting a new set of timings or when timings are 
+							listed, not when timings are collected due to the 
+							significant overhead of sorting while timings are in 
+							progress.</li>
+						</ol>
+					</blockquote>
+					<p><b>Circuit and gates</b></p>
+					<blockquote>
+						<p>Gate timing hardware requires only a simple 
+						resistor/capacitor circuit given below and one or more 
+						gates. The circuit with gates is connected to the app through the headset 
+						jack.</p>
+						<p>Multiple switches or photoresistors can be connected in 
+						series to 
+						measure the time an object enters and exits each gate.</p>
+						<ul>
+							<li>Momentary, normally closed switches or photoresistors 
+							(Note: 1k&#937; @ 10 lux and 200k&#937; @ 0 lux were 
+							tested) and that are low resistance when 
+							illuminated can be used.</li>
+						</ul>
+						<p></p>
+						<table border="1" cellpadding="10" cellspacing="0">
+							<tr>
+								<td>A. Circuit with 2 photoresistors<p>
+								<img border="0" src="circuit1.png" width="264" height="288"></p>
+								<p>R<sub>1</sub> = 10k&#937;<br>R<sub>2</sub> = 220&#937;<br>C = 0.1&#956;F<br>
+								PR<sub>1</sub> = (see note above)<br>
+								PR<sub>2</sub> = (see note above)</td>
+								<td>
+		B. Circuit with 3 switches<p>
+								<img border="0" src="circuit2.png" width="264" height="288"></p>
+								<p>R<sub>1</sub> = 10k&#937;<br>R<sub>2</sub> = 220&#937;<br>C = 0.1&#956;F<br>
+								NC = Normally closed<p>&nbsp;</td>
+								<td>
+		<blockquote>
+			<p>Four-pole CTIA interface connections <br>
+&nbsp;</p>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<td>tip</td>
+					<td>Left speaker</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Right speaker</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Ground</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Microphone</td>
+				</tr>
+			</table>
+			<p>&nbsp;</p>
+			<p>OMTP interface standard reverse <br>
+			Ground and Microphone.</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</blockquote>
+		</td>
+		</tr>
+		</table>
+						<br/>
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr>
+								<td>
+								Circuit and single photoresistor 
+								connected to headphone jack of tablet; the <i>
+								GateTiming</i> app has recorded ten entries and 
+								exits of the single gate.<br/>
+								<img border="0" src="photo1.jpg"></td>
+								<tr>
+								
+								<td>
+								&nbsp;<p>Test setup with circuit and two shrouded photoresistors connected to 
+								headphone jack of tablet; the <i>
+								GateTiming</i> app is performing the initial 
+								calibration of gates and illumination. The 
+								shroud was made from the plastic tube of a ball 
+								point pin.&nbsp; <br/>
+								<img border="0" src="photo2.jpg"></td>
+								</tr>
+							</tr>
+						</table>
+						
+	<p><b>Design </b></p>
+	<blockquote>
+		<p>The app generates an 4410 Hz sine wave as the input signal to the circuit, 
+		the gates of the circuit modify the 
+		signal which is the circuit's output to the microphone input, the signal 
+		from the microphone input is examined by the <i>GateTiming</i> app. When photoresistors 
+		illumination increases the amplitude of the signal received by the 
+		microphone increases. The amplitude of the 
+		microphone input can then be measured for transitions from low-to-high amplitude 
+		indicating a closing (i.e. an object exits the gate) or high-to-low indicating a gate opening 
+		(i.e. an object enters the gate). </p>
+		<p>Calibration and gate detection are performed one time when the app 
+		opens, necessary to adjust for the lighting conditions at each gate 
+		before accurate timing measurements can be done. Calibration and gate detection work together to determine what 
+		signal value 
+		from the circuit indicates when gate is entered or exited; the greater 
+		the signal difference between entering and exiting a gate, the more 
+		accurate the timing measurement. To calibrate, the app reads the circuit 
+		output signal, cranking up the volume in small steps to increase the 
+		amplitude until the detected signal amplitude is near 
+		the maximum possible, M; the lower the value (e.g. illumination), the higher the 
+		volume must be increased. After calibration sets the volume, gate detection finds the lowest amplitude 
+		for all the 
+		gates when each gate is blocked (entered) in turn, L is the maximum of 
+		the lows. Finding the 
+		maximum low signal when gates are blocked is necessary because photoresistors 
+		increase resistance as illumination decreases but are never completely 
+		open or closed, also one photoresistor can be illuminated differently 
+		than another. The maximum M and minimum L then set the upper and lower 
+		limits of the signal. The threshold amplitude, TA, level used to determine when an 
+		object enters or exits a gate is: TA=(M+L)/2; (M+L)/2 is the amplitude 
+		midpoint between M and L. An amplitude changing from above to below the 
+		threshold is defined as LOW (gate entered), changing from below to above 
+		the threshold is defined as HIGH (gate exited), the threshold is then 
+		used during timing.</p>
+	</blockquote>
+	<p><b>Accuracy</b></p>
+						<blockquote>
+							<table border="0" cellpadding="10" cellspacing="0">
+								<tr>
+									<td>Accuracy of measurement is highly dependent upon 
+							the lighting conditions; using red lasers as light sources and 
+							shielding the photoresistors from ambient light can 
+							improve accuracy. To test the accuracy using $1 LED 
+									flashlights for illumination and shrouded photoresistors, a free falling 
+									object (rectangular block) was 
+									dropped (by hand) from height of 1/2 meter. 
+									The predicted time is given by t = 
+									sqrt(1/2m*2/9.81m/s) = 0.319s, eight measured 
+									times and mean are in the table below. 
+									<p>The variation of measurements from 
+									predicted was primarily due to differences in 
+							the height where dropped above the first gate. For 
+							example, dropping from 1/2 inch (1.27 cm) above the first gate 
+							produced a timing of 0.310s on run 1, the time 
+							was less than predicted because the block was traveling a little 
+							faster through the gates (about 0.5 mph or 0.804672 kph at the first 
+							gate). Other timing variations are likely due to 
+							slight changes to the block's profile relative to the 
+							gates, not always maintaining a stable orientation.</p>
+									<p>Below images present the detailed timing results 
+									of entry, exit and elapsed times, simple 
+									results of entry time only, and the 
+							amplitude graph of a 0.309s timing. The graph marks 
+							the time when the first gate was blocked at 6.002s 
+							and the second gate was blocked at 6.313s, the 
+							times are approximate as the GateTiming app 
+							calibration and gate detection determines the amplitude threshold the 
+							gates are considered blocked, in this case at 66% of 
+							maximum amplitude measuring a time interval between 
+									entering the two gates of 0.309s.</p>
+									<p>Note</p>
+									<p>Elapsed time for run 9 on the detailed 
+									listing restarts at time 0 because timing 
+									was stopped then restarted; elapsed time was 
+									continuous for runs 1-8 when in repeat 
+									timing mode. </p>
+									<p>Detailed and simple listing selected 
+									through the extended menu, the simple 
+									listing can be sorted by selecting Time &#8597; or 
+									Run &#8597;, each toggles between ascending and 
+									descending sorts.</p>
+									</td>
+								</tr>
+							</table>
+						</blockquote>
+						<table border="0" cellpadding="10" cellspacing="0">
+							<tr>
+								<td>
+								<p align="center">Detailed timing results of object 
+								falling 1/2m</p>
+								<p align="center">Run 9 with time 0.309s between 
+								entering gates 1 and 2</p>
+								<p>
+								<img border="0" src="detailedlist.png" width="785" height="500"></td>
+								<td>
+								<p align="center">Simple results of object 
+								falling 1/2m</p>
+								<p align="center">Run 9 with time 0.309s between 
+								entering gates 1 and 2</p><p>
+								<img border="0" src="simplelist.png" width="785" height="500"></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+								<p align="center">Amplitude graph of circuit 
+								audio output measuring object falling 1/2m</p>
+								<p align="center">Run 9 entering gate 1 at 
+								6.002s and gate 2 at 6.313s, time 0.310s</p>
+								<p align="center">
+								<img border="0" src="simplelisttiming.png" width="785" height="495"></td>
+							</tr>
+						</table>
+						<p>
+						<b>WARNING: Volume control</b></p>
+						<blockquote>
+							<p>Do not listen to a headset or speaker connected 
+							to the device while using <i>GateTiming</i> as a 
+							potentially damaging noise is output through the 
+							speakers. </p>
+							<p>In order to calibrate with the circuit and lighting 
+							condition variations, <i>GateTiming</i> adjusts the 
+							media volume (commonly ranging on a 1 to 15 scale) 
+							until the signal received through the circuit is 
+							near maximum amplitude. On most Android devices 
+							tested with several LED white light sources 
+							(flashlight and desk lamp) pointed at the 
+							photoresistor, 80% of the maximum signal amplitude 
+							was achieved at 60-75% of the maximum volume. 
+							However, some Android tablets and phones limit the 
+							speaker volume to protect the device and user 
+							hearing but also limits the signal amplitude which 
+							can cause calibration to fail. On some devices, the 
+							volume limit can be adjusted by the user. For 
+							example, Samsung provides instructions for changing 
+							the volume limit at:
+							<a href="http://support-us.samsung.com/cyber/popup/iframe/pop_troubleshooting_fr.jsp?from_osc=&homeid=29220&idx=675562&modelcode=SM-G930TZKATMB&modelname=SM-G930T&">
+							http://support-us.samsung.com/cyber/popup/iframe/pop_troubleshooting_fr.jsp?from_osc=&amp;homeid=29220&amp;idx=675562&amp;modelcode=SM-G930TZKATMB&amp;modelname=SM-G930T&amp;</a></p>
+						</blockquote>
+						<p>
+						<b>Limitations</b></p>
+						<blockquote>
+							<p><i>Accuracy</i> of timing is limited by the audio headset. 
+							The peak amplitude of a 4410 Hz sine wave 
+							signal is examined to determine when it reaches a 
+							threshold for entering (amplitude changing from high 
+							to low) or exiting (amplitude changing from low to 
+							high). The 4410 Hz has peaks every 0.00022s; 
+							accuracy can be no better but can be much worse 
+							dependent upon gate latency, lighting conditions, 
+							even the shape and size of the object to be timed or 
+							the angle it passes through a gate. </p>
+							<p><i>Timings</i> are limited to 5000 total (e.g. 
+							500 runs through 10 gates), when 
+							limit reached the app stops timing at the last 
+							complete run, the user can then save the current 
+							timings as a CVS file, delete current times and 
+							resume timing.</p>
+							<p>Number of photoresistor gates in a circuit are 
+							limited by the total circuit resistance when all 
+							photoresistors are fully illuminated (closed). 
+							Because the photoresistors are serially connected, 
+							the total circuit resistance is the sum of all 
+							photoresistor resistance. An upper resistance limit 
+							for the circuit varies depending upon the audio 
+							output volume level of the device. A device with high 
+							volume and a circuit of 2000&#937;, could work well while 
+							the same circuit would fail on a lower volume 
+							device. </p>
+							<p>Finally, some devices are faster and have better 
+							audio than others. A Nexus 7 produced the falling 
+							object results above with a very symmetric audio 
+							signal and consistent timings. A $100 phone recorded 
+							a very asymmetric audio signal and failed to record 
+							a single complete timing run correctly; the same 
+							phone was successful when the photoresistor's 
+							illumination was blocked for a longer period of time 
+							by a slower moving object.</p>
+						</blockquote>
+						<p>
+						<b>References for further examination of Mobile Science apps and use</b></p>
+	<blockquote>
+		<p>R. Wisman, K. Forinash; 'Science in Your Pocket', International 
+		Journal on Hands-on Science (IJHSCI) Vol. 1, No. 1, September (2008) 
+		p7-15.</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Acceleration&#8217;. Measures 
+		acceleration. Apple App Store (https://itunes.apple.com/us/app/mobile-science-acceleration/id389821809?mt=8).</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Temperature&#8217;. Measures 
+		temperature using a simple circuit attached to the headset jack of an 
+		iOS mobile device. Apple App Store (http://itunes.apple.com/us/app/mobile-science-temperature/id467423322?mt=8).
+		</p>
+		<p>R. Wisman and K. Forinash, &#8216;Mobile Science - Ohmmeter&#8217;. Application 
+		to measure resistance using a simple circuit attached to the headset 
+		jack of an iOS mobile device. Apple App Store, April 2013. https://itunes.apple.com/us/app/ohmmeter/id628027479?mt=8</p>
+		<p>K. Forinash and R. Wisman, &#8216;Mobile Science &#8211; Ohmmeter+&#8217;. Converts 
+		resistance to other units determined by arbitrary user defined equation. 
+		Application measures resistance using a simple circuit attached to the 
+		headset jack of an iOS mobile device. August 2013. https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=685431874&amp;mt=8</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioTime'. Records, 
+		displays, saves, plays and finds dominant frequency of selected audio. 
+		November 2013. 
+		https://play.google.com/store/apps/details?id=edu.ius.audiotime</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioTime+'. AudioTime+ 
+		can time events by sound or photo gates and records, displays, saves, 
+		plays and finds dominant frequency of selected audio. November 2013. 
+		https://play.google.com/store/apps/details?id=edu.ius.audiotimeplus</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioSpectrum'. 
+		AudioSpectrum displays the frequency spectrum of a WAV file or audio 
+		sourced from AudioTime or AudioTime+ apps. December 2013. 
+		https://play.google.com/store/apps/details?id=edu.ius.audiospectrum</p>
+		<p>R. Wisman, K. Forinash; 'Mobile Science', Ubiquitous Learning; An 
+		International Journal, Vol. 3 No. 1 (2011) p21-34.</p>
+		<p>R. Wisman and K. Forinash, &#8216;Smartphones as portable oscilloscopes for 
+		physics labs&#8217;, The Physics Teacher, Vol. 50 No. 4 (2012) p242.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones - Experiments with an 
+		External Thermistor Circuit&#8217;, The Physics Teacher, Vol. 50 No. 9 (2012) 
+		p566.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones as Data Collection Tools for 
+		Science Education&#8217;, International Newsletter on Physics Education, Vol. 
+		64 (2013). </p>
+		<p>K. Forinash and R. Wisman, 'Using smartphones as science laboratory 
+		instruments', American Association of Physics Teachers, Portland, July 
+		13-17, 2013</p>
+		<p>R. Wisman,&nbsp; Gabriel Spahn, and K. Forinash, 'Time measurements 
+		with a mobile device using sound', Physics Education, Volume 53, Number 
+		3, February 16, 2018. http://iopscience.iop.org/article/10.1088/1361-6552/aaaa53/meta</p>
+	</blockquote>
+						<p><b>Legalese</b></p>
+	<blockquote>
+		<p>The program is free software: you can use
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version. No promises are made or responsibly
+		for damage.</p>
+	</blockquote>
+	<p><b>Acknowledgements</b></p>
+						<blockquote>
+							<p>Michael Steckner: Thanks for testing the app for 
+							your hovercraft competition. Best of luck.</p>
+						</blockquote>
+						<p><b>Contacts</b></p>
+	<blockquote>
+		<p>R. Wisman (<script language="javascript">
+document.write('<a href="mailto:rwisman');
+document.write('@');
+document.write('ius.edu">rwisman');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) for 
+		software questions.</p>
+		<p>K. Forinash (<script language="javascript">
+document.write('<a href="mailto:kforinas');
+document.write('@');
+document.write('ius.edu">kforinas');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) 
+		for physics or educational use questions.</p>
+	</blockquote>
+</body>
+
+</html>

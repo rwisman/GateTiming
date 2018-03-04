@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/elapsed"
+        android:gravity="center_horizontal"
+        style="@style/ListText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/gate"
+        android:gravity="center_horizontal"
+        style="@style/ListText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/enter"
+        android:gravity="center_horizontal"
+        style="@style/ListText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/timebetweenenter"
+        android:gravity="center_horizontal"
+        style="@style/ListText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/exit"
+        android:gravity="center_horizontal"
+        style="@style/ListText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/timebetweenexit"
+        android:gravity="center_horizontal"
+        style="@style/ListText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</LinearLayout>

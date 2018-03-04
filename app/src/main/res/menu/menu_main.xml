@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GateTimingActivity"
+    android:id="@+id/menu">
+
+    <item
+        android:id="@+id/action_timings"
+        android:orderInCategory="0"
+        android:title="@string/timerset"
+        android:icon="@drawable/gate"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_repeat"
+        android:orderInCategory="100"
+        android:title="@string/repeat"
+        android:icon="@drawable/ic_action_repeat"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/action_stop"
+        android:orderInCategory="200"
+        android:title="@string/stop"
+        android:icon="@drawable/ic_pause_white_24dp"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_view_list"
+        android:orderInCategory="300"
+        android:title="@string/list"
+        android:icon="@drawable/ic_action_view_list"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@+id/action_calibrate"
+        android:orderInCategory="400"
+        android:title="@string/calibrate"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="500"
+        android:title="@string/delete"
+        android:icon="@drawable/ic_action_delete"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@+id/action_folder"
+        android:orderInCategory="600"
+        android:title="@string/save"
+        android:icon="@drawable/ic_action_folder"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/action_sounddetect"
+        android:orderInCategory="700"
+        android:title="@string/setDetectLevel"
+        android:icon="@drawable/ic_action_volume_mute"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/action_restore"
+        android:orderInCategory="800"
+        android:title="@string/restore"
+        android:icon="@drawable/ic_restore_white_24dp"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/action_toggletimingdisplay"
+        android:orderInCategory="900"
+        android:title="@string/timingdetailed"
+        android:icon="@drawable/ic_iso_white_24dp"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="1000"
+        android:title="@string/about"
+        android:icon="@drawable/ic_action_help_outline"
+        app:showAsAction="never"
+        ></item>
+</menu>

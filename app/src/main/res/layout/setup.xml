@@ -1,0 +1,476 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:GateTiming="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:drawableLeft="@drawable/icon_50"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/setup_title"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonbackgroundcolor"
+                android:scaleType="fitXY"
+                android:text="@string/start_label"
+                android:textSize="25sp"
+                android:onClick="start"
+                android:textColor="@drawable/buttontextcolor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical">
+
+        <View
+            style="@style/HorizontalLine" />
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:id="@+id/headset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:background="@color/darkgray">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/noheadsetcircuit_title"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/SetupRetryButton"
+                            android:onClick="retryHeadsetConnection"/>
+
+                        <Button
+                            style="@style/SetupIgnoreButton"
+                            android:onClick="ignoreHeadsetConnection"/>
+
+                    </LinearLayout>
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/composite"
+                        android:text="@string/setup_headset_text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/airplane"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:background="@color/darkgray">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_airplanemode_title"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/SetupRetryButton"
+                            android:onClick="retryAirplaneMode"/>
+
+                        <Button
+                            style="@style/SetupIgnoreButton"
+                            android:onClick="ignoreAirplaneMode"/>
+
+                    </LinearLayout>
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_airplanemode_text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/record"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:background="@color/darkgray">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/record_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_recordpermission_title"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/record_retry_button"
+                            style="@style/SetupRetryButton"
+                            android:onClick="retryRecordPermission"/>
+
+                        <Button
+                            style="@style/SetupIgnoreButton"
+                            android:onClick="ignoreRecordPermission"/>
+
+                    </LinearLayout>
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/record_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/circuit"
+                        android:text="@string/setup_recordpermission_text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/storage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:background="@color/darkgray">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/storage_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_storagepermission_title"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/storage_retry_button"
+                            style="@style/SetupRetryButton"
+                            android:onClick="retryStoragePermission"/>
+
+                        <Button
+                            style="@style/SetupIgnoreButton"
+                            android:onClick="ignoreStoragePermission"/>
+
+                    </LinearLayout>
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/storage_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_storagepermission_text"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollviewFINISHED"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:background="@color/darkgray">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_finish_title"
+                        android:textSize="25sp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:text="@string/setup_finish_text"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/check_headset_finish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkheadset"
+                            android:textSize="20sp"/>
+
+                        <CheckBox
+                            android:id="@+id/check_airplane_finish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkairplanemode"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/check_record_finish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkrecord"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/check_storage_finish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkstorage"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollviewSTART"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:background="@color/darkgray">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/circuit"
+                        android:text="@string/setup_welcome_text"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/check_headset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkheadset"
+                            android:textSize="20sp"/>
+
+                        <CheckBox
+                            android:id="@+id/check_airplane"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkairplanemode"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/check_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkrecord"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/check_storage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_checkstorage"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </ViewFlipper>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical">
+
+        <View
+            style="@style/HorizontalLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="6dip"
+            android:text="@string/website"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_alignParentTop="true"
+                android:background="?attr/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/closesetup"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonbackgroundcolor"
+                    android:scaleType="fitXY"
+                    android:text="@string/closesetup"
+                    android:textSize="20sp"
+                    android:onClick="closesetup"
+                    android:textColor="@drawable/buttontextcolor" />
+
+                <View
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_noshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:text="@string/no_showsetup"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp"
+                    GateTiming:buttonTint="@color/orange" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

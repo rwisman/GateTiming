@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <!-- colorPrimary is used for coloring the Toolbar -->
+        <item name="colorPrimary">#000000</item>
+        <!-- colorPrimaryDark is used for coloring the status bar -->
+        <item name="colorPrimaryDark">#303F9F</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">#FFAB40</item>
+    </style>
+
+    <style name="ListText" parent="Theme.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">#202020</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="SetupRetryButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/buttonbackgroundcolor</item>
+        <item name="android:textColor">@drawable/buttontextcolor</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">@string/Retry</item>
+    </style>
+
+    <style name="SetupIgnoreButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/buttonbackgroundcolor</item>
+        <item name="android:textColor">@drawable/buttontextcolor</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">@string/Ignore</item>
+    </style>
+
+</resources>

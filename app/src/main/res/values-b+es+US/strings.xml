@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources
+    [<!ENTITY app_name "GateTiming"><!ENTITY versionCode "20">]>
+
+<resources>
+    <string name="versionCode"> &versionCode;</string>
+    <string name="app_name">&app_name;</string>
+    <string name="description">&app_name; Version &versionCode;</string>
+
+    <string name="react_label">Detener</string>
+    <string name="start_label">Comenzar</string>    
+    <string name="wait_label"> Esperar </string>
+    <string name="elapsed_label">Transcurrido</string>
+    <string name="rungate_label"> Ejecutar: Puerta </string>
+    <string name="enter_label"> Entrar </string>
+    <string name="exit_label"> Salir </string>
+    <string name="difference_label">Brecha</string>
+    <string name="eventtiming_label"> Gate Timing de interruptores o fotoresistores </string>
+    <string name="visible_label"> Visualización de tiempo visible en tiempo real </string>
+    <string name="nothingtodo_label"> No hay registros registrados. </string>
+    <string name="completed_label"> Temporización\nCompletado </string>
+    <string name="list"> Listar tiempos </string>
+    <string name="save"> Guardar tiempos como archivo CVS </string>
+    <string name="stop"> Detener </string>
+    <string name="timerset"> Número de puertas </string>
+    <string name="delete"> Borrar tiempos </string>
+    <string name="pause"> Pausa </string>
+    <string name="time"> Tiempo </string>
+    <string name="changeNumberofGates"> Cambiar el número de puertas </string>
+    <string name="changeNumberofGates_text"> "\nCambiando el número de puertas se eliminarán los tiempos previos de la lista. \n\nOK para continuar con el cambio." </string>
+    <string name="sounddetect"> Nivel de detección </string>
+    <string name="setDetectLevel"> Establecer el nivel de detección </string>
+    <string name="calibration"> Calibración de puertas </string>
+    <string name="calibrate">Calibración - Puertas: </string>
+    <string name="calibrate_text"> \nLa calibración requiere que todas las compuertas estén cerradas (es decir, todas las fotorresistencias están al máximo iluminadas). \n\nCANCEL para usar la última configuración de calibración conocida. \n\nOK para iniciar la calibración. </string>
+    <string name="calibratingExplanation"> \nLa calibración es necesaria antes de que se pueda realizar el cronometraje. Una puerta puede ser un único interruptor o fotorresistor. \n\nCierre todas las compuertas (ilumine todos los fotoresistores), espere a que finalice la calibración. \n\nPara cambiar el número de compuertas use la opción del menú: </string>
+    <string name="recalibrate_text"> \nLa calibración requiere que todas las compuertas estén cerradas (es decir, todas las fotorresistencias están iluminadas al máximo). </string>
+    <string name = "detectingResults">\nResultados del nivel de detección: </string>
+    <string name = "detectingResultsExplanation">\nExplicación de los resultados del nivel de detección: </string>
+    <string name="detectingExplanation"> \nPase el objeto para que pase lentamente por cada puerta (fotoresistor).</string>
+    <string name="calibrationfailed">Calibración fallida - Nivel: </string>
+    <string name="calibratedvolume"> Calibrado a nivel de potencia de volumen: </string>
+    <string name="calibrating">Calibración del nivel de potencia del volumen para puertas. </string>
+    <string name="detectingGates">Detección de nivel de puerta - Gates: </string>
+    <string name="recalibrate"> \n\nSe requiere calibración y detección de puerta. \n\nPara comenzar, use el elemento de menú: </string>
+    <string name="detectionLevel"> \n\nDetección de los niveles de la compuerta en: </string>
+    <string name="detectionLevelFailed">Fallo en la detección del nivel de puerta - Gates: </string>
+    <string name="detectionLevel_text"> Defina el número de puertas, luego pase el objeto a sincronizar a través de cada puerta. \n\nCANCEL para usar las últimas configuraciones de nivel de puerta conocidas. \n\nOK para iniciar la detección del nivel de puerta. </string>
+    <string name="gatesDetected"> niveles de puerta detectados: </string>
+    <string name="about">Sobre</string>
+    <string name="about_text"> &app_name; Version &versionCode; \nmedidas las compuertas de tiempo \nare ingresadas y salidas. \n\n Las opciones de menú son: </string>
+    <string name="restore"> Restaurar la configuración predeterminada </string>
+    <string name="savefilename"> Guardar nombre de archivo </string>
+    <string name="ok">Acceptar</string>
+    <string name="cancel"> Cancelar </string>
+    <string name="deletetimes"> Eliminar tiempos: no se puede deshacer. </string>
+    <string name="deleterun"> Eliminar tiempos </string>
+    <string name="timerdelay"> Tiempo de retraso entre compuertas </string>
+    <string name="timerwait"> Tiempo máximo de espera para una puerta </string>
+    <string name="deleted"> Tiempos borrados </string>
+    <string name="on">Encender</string>
+    <string name="off">Apagar</string>
+    <string name="airplanemode"> Activa las configuraciones de modo de avión manualmente. Las llamadas telefónicas, etc. interfieren con los tiempos. \n\nCANCEL continúa con el Modo avión desactivado. \n\nOK abre Configuración> Modo avión. </string>
+    <string name="connectHeadSetFailed"> GateTiming no pudo encontrar el circuito de la puerta. </string>
+    <string name="connectHeadSetFailed_text"> GateTiming requiere una conexión de auricular en el circuito (en el sitio web). \n\nCancelar continúa, no hay tiempos posibles. \n\nOK y conectar el circuito de la puerta continúa con los tiempos. </string>
+    <string name="noheadsetcircuit_title"> No se encontró ningún circuito de auriculares. </string>
+    <string name="noheadsetcircuit_text"> &app_name; veces los objetos se mueven a través de las puertas por el circuito de la derecha conectado a los auriculares como en la foto de abajo. El circuito detecta un objeto que bloquea la iluminación en la fotorresistencia; sin el circuito, &app_name;
+        no tiene funcionalidad, no se puede hacer nada. \n\nUna descripción completa del circuito y el &app_name;
+        la aplicación se puede encontrar en el sitio web que se encuentra en la parte inferior. </string>
+    <string name="Retry"> REINTENTAR </string>
+    <string name="Ignore"> IGNORAR </string>
+    <string name="repeat"> Repita la ejecución varias veces. </string>
+    <string name="repeat_one"> Repetir ejecución una vez. </string>
+    <string name="timingsExceeded"> Número de tiempos excedidos. </string>
+    <string name="timingsExceeded_text"> Guarda los tiempos actuales en el archivo CVS, elimina los tiempos actuales y continúa. </string>
+    <string name="audioLoss"> GateTiming - Audio perdido en otra aplicación. </string>
+    <string name="calibrationlow">Calibración baja - Nivel: </string>
+    <string name="calibratecircuit_text"> \nVerifique que cada fotoresistor esté conectado e iluminado. \n\n \nCANCELAR para usar el último nivel de calibración conocido. \n\nOK para reiniciar la calibración. </string>
+    <string name="calibratelow_text"> \nPosibles correcciones: \na) Aumenta la iluminación en los fotoresistores, \nb) Aumenta la configuración de límite de volumen para medios y amp; música, \nc) Coincide con la longitud de onda de la luz con el fotorresistor. \n\n \nPASE para utilizar este nivel de calibración. \n\nCANCELAR para usar el último nivel de calibración conocido. \n\nOK para reiniciar la calibración. </string>
+    <string name="record_audio_disabled_title"> Grabar audio deshabilitado </string>
+    <string name="record_audio_disabled_text"> Se requiere permiso de grabación de audio pero ahora está deshabilitado. \n\nPuede habilitar manualmente mediante: \n\nConfiguración> Aplicaciones> GateTiming> Permisos> Micrófono \n\nantes de abrir &app_name;
+        o uninstall &app_name; y reinstalar. </string>
+    <string name="record_audio_rationale_title"> Permitir grabación de audio </string>
+    <string name="record_audio_rationale_text"> &app_name; funciona emitiendo audio a través del circuito de temporización y grabando el audio para detectar cambios cuando un objeto ingresa o sale de una puerta. \n\nAllow Record Audio es requerido para &app_name;
+        para continuar. </string>
+    <string name="write_external_storage_rationale_title"> Permitir acceso a archivos </string>
+    <string name="write_external_storage_rationale_text"> Permitir &app_name; para acceder a fotos, archivos multimedia y archivos en su dispositivo para guardar los resultados de sincronización en un archivo CVS. \n\nDeny y &app_name;
+        funcionará sin guardar el archivo CVS. </string>
+    <string name="write_external_storage_disabled_text"> El permiso de acceso al almacenamiento de archivos ahora está deshabilitado. \n\nPuede habilitarlo manualmente mediante: \n\nConfiguración> Aplicaciones> GateTiming> Permisos> Almacenamiento \n\nantes de abrir &app_name;
+        o uninstall &app_name; y reinstalar. </string>
+    <string name="write_external_storage_disabled_title"> Escribir el acceso de almacenamiento deshabilitado </string>
+    <string name="is_terminating"> &app_name; terminará </string>
+    <string name="no_showsetup"> No mostrar configuración nuevamente </string>
+    <string name="closesetup"> CERRAR Configuración </string>
+    <string name="setup_welcome_text"> Bienvenido a &app_name; Configuración. \n\n &app_name; veces los objetos que se mueven a través de las puertas por el circuito de la derecha conectado a los auriculares. \n\nUna descripción completa del circuito y el &app_name;
+        la aplicación se puede encontrar en el sitio web que se detalla a continuación. \n\nPara &app_name;
+        para funcionar, el programa de instalación debe verificar lo siguiente: </string>
+    <string name="setup_finish_text"> \nCLOSE SETUP para estos pasos finales. \n\n1) Calibre el circuito ajustando el volumen del parlante para medir la iluminación de todos los fotoresistores o que las compuertas estén cerradas. Todos los fotoresistores en el circuito deben estar iluminados. \n\n2) Pruebe cada compuerta individualmente para determinar cuándo se ingresaron o salieron las compuertas. \n\n \nConfiguración del estado final: \n </string>
+    <string name="setup_finish_title"> Configuración finalizada. </string>
+    <string name="writeExternalStorage_no_permission"> &app_name; no tiene permiso para acceder a los archivos en su dispositivo. </string>
+    <string name="setup_title"> &app_name; Configuración </string>
+    <string name="setup_checkheadset"> Circuito de auriculares conectado. </string>
+    <string name="setup_checkairplanemode"> Modo avión activado. </string>
+    <string name="setup_checkrecord"> Grabación de audio permitida. </string>
+    <string name="setup_checkstorage"> Escribir acceso de almacenamiento permitido. </string>
+    <string name="setup_headset_text"> REINTENTAR después de conectar el circuito de los auriculares. \n\nIGNORE continuará, pero no es posible temporizar. \n\n &app_name;
+        veces los objetos se mueven a través de las puertas por el circuito de la derecha conectado a los auriculares como en la foto de abajo. El circuito detecta un objeto que bloquea la iluminación en la fotorresistencia; sin el circuito, &app_name;
+        no tiene funcionalidad, no se puede hacer nada. \n\nUna descripción completa del circuito y el &app_name;
+        la aplicación se puede encontrar en el sitio web que se encuentra en la parte inferior. </string>
+    <string name="setup_airplanemode_title"> El modo avión está desactivado. </string>
+    <string name="setup_airplanemode_text"> El modo de avión debe estar ENCENDIDO para evitar interferencias con temporizaciones por llamadas telefónicas, etc. \n\nRETRAR para encender el Modo avión. \n\nIGNORE continuará con el Modo avión desactivado. </string>
+    <string name="setup_recordpermission_title"> Permitir permiso de grabación de audio </string>
+    <string name="setup_recordpermission_text"> &app_name; funciona emitiendo audio a través del circuito de sincronización de la derecha y grabando el audio para detectar cambios cuando un objeto ingresa o sale de una puerta. \n\nRETRY para Permitir grabación de audio. \n\nDeny o IGNORE y &app_name;
+        no podrá funcionar. </string>
+    <string name="setup_storagepermission_title"> Permitir permiso de escritura de acceso de almacenamiento </string>
+    <string name="setup_storagepermission_text"> REINTENTAR para permitir el acceso de almacenamiento de escritura para &app_name;
+        para acceder a fotos, archivos multimedia y archivos en su dispositivo para guardar los resultados de sincronización en un archivo CVS. \n\nIGNORE y &app_name;
+        funcionará sin guardar el archivo CVS. </string>
+    <string name="website"> http://pages.iu.edu/~rwisman/MobileScience/GateTiming </string>
+    <string name="level_label">Nivel</string>
+    <string name="gate_label">Puerto</string>
+    <string name="run_label">Correr &#8597;</string>
+    <string name="time_label">Tiempo &#8597;</string>
+    <string name="rating_label">Calificación</string>
+    <string name="volume_label">Volumen</string>
+    <string name="power_label">Energía</string>
+    <string name="datetime_label">Fecha/UTC.ms</string>
+    <string name="detectionresults_label">Resultados de detección</string>
+    <string name="detectionresults_explanation">CANCELAR - vuelva a intentar Detección \nOK - Comience el tiempo </string>
+    <string name="detectionresults_recalibrate">Calibración</string>
+    <string name="detectionresults_fail">REINTENTAR después de corregir la iluminación de puerta \ncon calificación deficiente o de falla. </string>
+    <string name="detectionresults_ok">Aceptar para iniciar el cronometraje.</string>
+    <string name="calibrationresults_fail">REINTENTAR después de corregir la iluminación de la puerta. </string>
+    <string name="calibrationresults_ok">OK para continuar. </string>
+    <string name="calibrationresults_nocircuit">REINTENTAR después de conectar el circuito - parece estar desconectado. </string>
+    <string name="none">Ninguna</string>
+    <string name="good">Bueno</string>
+    <string name="poor">Pobre</string>
+    <string name="fail">Falta</string>
+    <string name = "delete_label">Eliminar</string>
+    <string name = "timingdetailed">Lista detallada</string>
+    <string name = "timingsimple"> Lista simple </string>
+    <string name = "abouttimelisting">Lista simple o detallada</string>
+    <string name="mean">Media</string>
+    <string name="run">Correr</string>
+</resources>
